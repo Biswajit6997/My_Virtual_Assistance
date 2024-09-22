@@ -1,0 +1,206 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+
+}
+#logo{
+    width: 20vw;
+
+}
+h1{
+    color: aliceblue;
+    font-family: "Playwrite DE Grund", cursive;
+}
+#name{
+    color: rgb(214, 32, 132);
+    font-size: 45px;
+}
+#va{
+    color: rgb(16, 201, 208);
+    font-size: 45px;
+}
+.voicee{
+    width: 150px;
+    display: none;
+}
+#btn{
+    width: 30%;
+    background:linear-gradient(to right,rgb(21, 145, 207),rgb(201,41,116));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(201,41,116);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+#btn:hover{
+    box-shadow: 2px 2px 25px rgb(21, 145, 207), 2px 2px 10px rgb(201,41,116);
+    letter-spacing: 2px;
+
+
+
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     width: 100%;
+     height: 100vh;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 20px;
+ }
+ 
+ #logo {
+     width: 12vw;
+     max-width: 100px;
+     min-width: 60px;
+ }
+ 
+ h1 {
+     color: aliceblue;
+     font-family: "Playwrite DE Grund", cursive;
+     text-align: center;
+     margin-bottom: 20px;
+     font-size: 3vw; /* Adjusted font size */
+ }
+ 
+ #name {
+     color: rgb(214, 32, 132);
+     font-size: 4vw; /* Adjusted font size */
+     display: inline-block;
+ }
+ 
+ #va {
+     color: rgb(16, 201, 208);
+     font-size: 4vw; /* Adjusted font size */
+     display: inline-block;
+ }
+ 
+ .voicee {
+     width: 100px;
+     display: none;
+ }
+ 
+ #btn {
+     width: 50%;
+     max-width: 300px;
+     background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     font-size: 1.5vw; /* Adjusted font size */
+     border-radius: 20px;
+     color: white;
+     box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(201, 41, 116);
+     border: none;
+     transition: all 0.5s;
+     cursor: pointer;
+ }
+ 
+ #btn:hover {
+     box-shadow: 2px 2px 25px rgb(21, 145, 207), 2px 2px 10px rgb(201, 41, 116);
+     letter-spacing: 1px;
+ }
+ 
+ /* Media Query for screens larger than 1024px (desktops and laptops) */
+ @media screen and (min-width: 1024px) {
+     h1 {
+         font-size: 2vw;
+     }
+ 
+     #name, #va {
+         font-size: 3vw;
+     }
+ 
+     #btn {
+         width: 40%;
+         max-width: 250px;
+         font-size: 1.2vw;
+     }
+ }
+ 
+ /* Media Query for tablets and smaller laptops */
+ @media screen and (max-width: 1024px) {
+     h1 {
+         font-size: 3vw;
+     }
+ 
+     #name, #va {
+         font-size: 4vw;
+     }
+ 
+     #btn {
+         width: 50%;
+         max-width: 300px;
+         font-size: 1.5vw;
+     }
+ }
+ 
+ /* Media Query for smaller screens (e.g., mobile phones) */
+ @media screen and (max-width: 768px) {
+     h1 {
+         font-size: 4vw;
+     }
+ 
+     #name, #va {
+         font-size: 5vw;
+     }
+ 
+     #btn {
+         width: 80%;
+         font-size: 2vw;
+     }
+ }
+ 
+ /* Media Query for very small devices (e.g., small mobile phones) */
+ @media screen and (max-width: 480px) {
+     #logo {
+         width: 20vw;
+     }
+ 
+     h1 {
+         font-size: 5vw;
+     }
+ 
+     #name, #va {
+         font-size: 6vw;
+     }
+ 
+     #btn {
+         padding: 10px;
+         font-size: 3vw;
+     }
+ }
+ 
